@@ -10,7 +10,7 @@
         <div class="card">
             <div class="d-flex justify-content-between p-3">
                 <div class="left-side">
-                    category(44)
+                    category( {{count($category_count)}} )
                 </div>
                 <div class="right-side">
                     <!-- Button trigger modal -->

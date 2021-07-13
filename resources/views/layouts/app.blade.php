@@ -48,6 +48,12 @@
             $("#updateModel").modal("hide");
         });
 
+        window.livewire.on("addPost",()=>{
+            $("#modelId").modal("hide");
+        });
+        window.livewire.on("updateModal",()=>{
+            $("#updateModal").modal("hide");
+        });
     </script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery.js') }}"></script>

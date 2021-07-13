@@ -22,7 +22,8 @@ class Category extends Component
     {
         $searchTerm = "%" . $this->searchTerm . "%";
         $category = ModelsCategory::where("cat_name", "LIKE", $searchTerm)->paginate(4);
-        return view('livewire.category', ["category" => $category]);
+        $cat_count=ModelsCategory::all();
+        return view('livewire.category', ["category" => $category,"category_count"=>$cat_count]);
     }
 
     public function restoreInput()
